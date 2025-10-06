@@ -66,7 +66,7 @@ dim = numpy_vector.shape[1]
 #  Create FAISS index using Euclidean distance
 index = faiss.IndexFlatL2(dim)  # L2 = Euclidean distance
 
-# 2️⃣ Add vectors to the index
+# Add vectors to the index
 index.add(numpy_vector)
 
 print(f"FAISS index created with {index.ntotal} vectors.")
